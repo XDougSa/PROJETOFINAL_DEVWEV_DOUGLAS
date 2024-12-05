@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/livros"></ion-back-button> <!-- Botão de voltar -->
+    </ion-buttons>
+    <ion-title>Editar Livro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Título</ion-label>
+    <ion-input [(ngModel)]="livro.titulo" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Descrição</ion-label>
+    <ion-textarea [(ngModel)]="livro.descricao"></ion-textarea>
+  </ion-item>
+
+  <!-- Exibindo a imagem atual e permitindo escolher uma nova -->
+  <ion-item>
+    <ion-label position="floating">Foto</ion-label>
+    <ion-input type="file" (change)="onFileChange($event)"></ion-input>
+  </ion-item>
+  
+  <div *ngIf="livro.foto">
+    <h3>Imagem Atual:</h3>
+    <img [src]="livro.foto" alt="Foto do Livro" class="livro-img">
+  </div>
+
+  <ion-button expand="full" (click)="editarLivro()">Salvar Alterações</ion-button>
+</ion-content>

@@ -1,0 +1,32 @@
+<!-- src/app/adicionar-livro/adicionar-livro.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/livros">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="title">Adicionar Livro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding adicionar-livro-container">
+  <div class="adicionar-livro-box">
+    <ion-item class="input-item">
+      <ion-label position="floating">Título</ion-label>
+      <ion-input [(ngModel)]="livro.titulo" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label position="floating">Descrição</ion-label>
+      <ion-input [(ngModel)]="livro.descricao" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item class="input-item">
+      <ion-label>Foto</ion-label>
+      <input type="file" (change)="onFileSelected($event)" />
+    </ion-item>
+
+    <ion-button expand="full" (click)="adicionarLivro()" class="adicionar-button">Adicionar</ion-button>
+  </div>
+</ion-content>

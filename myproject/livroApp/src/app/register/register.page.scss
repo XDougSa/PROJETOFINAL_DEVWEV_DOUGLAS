@@ -1,0 +1,61 @@
+/* src/app/register/register.page.scss */
+
+/* Estilo para o título do cabeçalho */
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3880ff;
+}
+
+/* Contêiner da página de registro */
+.register-container {
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100vh;
+    /* Altura total da tela */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Caixa de registro */
+.register-box {
+    width: 100%;
+    max-width: 1800px;
+    background-color: #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Estilo para o título "BookGuard" dentro da caixa de registro */
+.title-container h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3880ff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilizando os itens de entrada */
+.input-item {
+    margin-bottom: 20px;
+}
+
+/* Estilizando o botão de registro */
+.register-button {
+    --background: #3880ff;
+    --border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilo para o botão de voltar */
+ion-button[routerLink] {
+    --color: #ff3838;
+}

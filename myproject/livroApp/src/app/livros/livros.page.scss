@@ -1,0 +1,78 @@
+/* Estilo para o avatar da imagem do livro */
+ion-avatar {
+    width: 80px; /* Largura maior para a imagem */
+    height: 120px; /* Altura maior para a imagem */
+    margin-right: 16px; /* Adiciona espaço à direita entre a imagem e o texto */
+  }
+  
+  /* Estilo para a imagem do livro */
+  .livro-img {
+    width: 100%; /* Faz a imagem ocupar toda a área do avatar */
+    height: 100%; /* Faz a imagem ocupar toda a altura do avatar */
+    object-fit: cover; /* Faz a imagem cobrir todo o espaço disponível, mantendo a proporção */
+    border-radius: 8px; /* Bordas arredondadas para a imagem */
+  }
+  
+  /* Estilo para o item da lista de livros */
+  ion-item {
+    display: flex; /* Alinha os elementos (foto, título, descrição) na horizontal */
+    align-items: center; /* Alinha verticalmente os itens dentro do ion-item */
+    padding: 10px 0; /* Adiciona espaçamento em torno dos itens */
+  }
+  
+  /* Estilo para o título e descrição do livro */
+  ion-label {
+    flex: 1; /* Faz o título e descrição ocuparem o restante do espaço disponível */
+    padding-right: 10px; /* Adiciona um pouco de espaço entre o texto e o botão de remover */
+  }
+  
+  h2 {
+    font-size: 18px; /* Tamanho de fonte maior para o título do livro */
+    font-weight: bold; /* Deixa o título em negrito */
+    margin: 0; /* Remove a margem do título */
+  }
+  
+  p {
+    font-size: 14px; /* Tamanho de fonte menor para a descrição */
+    color: #555; /* Cor da descrição (um cinza mais suave) */
+    margin-top: 4px; /* Adiciona um pequeno espaço entre o título e a descrição */
+  }
+  
+  /* Estilo para o botão de remover */
+  ion-button {
+    --border-radius: 8px; /* Arredonda as bordas do botão */
+    --background: #f44336; /* Cor de fundo vermelha para o botão de remover */
+    --color: white; /* Cor do texto do botão */
+  }
+  
+  ion-button:hover {
+    --background: #d32f2f; /* Cor mais escura para o botão ao passar o mouse sobre ele */
+  }
+  
+  /* Estilo para o botão de adicionar livro */
+  ion-button[expand="full"] {
+    margin-top: 20px; /* Adiciona espaço acima do botão */
+    --background: #4caf50; /* Cor de fundo verde para o botão de adicionar livro */
+    --color: white; /* Cor do texto do botão */
+  }
+  
+  /* Estilo para o cabeçalho da página */
+  ion-toolbar {
+    --background: #3f51b5; /* Cor de fundo azul para o cabeçalho */
+    --color: white; /* Cor do texto no cabeçalho */
+  }
+  
+  ion-title {
+    font-size: 22px; /* Tamanho de fonte maior para o título */
+  }
+  
+  /* Estilo para o botão de logout */
+  ion-button {
+    --background: #f44336; /* Cor de fundo vermelha para o botão de logout */
+    --color: white; /* Cor do texto do botão */
+  }
+  
+  ion-button:hover {
+    --background: #d32f2f; /* Cor mais escura para o botão de logout ao passar o mouse sobre ele */
+  }
+  

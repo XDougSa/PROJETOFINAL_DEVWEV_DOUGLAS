@@ -1,0 +1,59 @@
+/* src/app/adicionar-livro/adicionar-livro.page.scss */
+
+/* Estilo para o título do cabeçalho */
+.title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #3880ff;
+  }
+  
+  /* Contêiner da página de adicionar livro */
+  .adicionar-livro-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Altura total da tela */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Caixa de adicionar livro */
+  .adicionar-livro-box {
+    width: 100%;
+    max-width: 1750px;
+    background-color: #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para os itens de entrada */
+  .input-item {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilizando o botão de adicionar */
+  .adicionar-button {
+    --background: #3880ff;
+    --border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para o botão de voltar */
+  ion-button[routerLink] {
+    --color: #3880ff;
+  }
+  
+  /* Personalizando a aparência do input de arquivo */
+  input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  

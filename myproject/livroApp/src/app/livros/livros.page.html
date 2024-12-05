@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Livros</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="logout()">Logout</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let livro of livros">
+      <!-- Adicionando a foto à esquerda -->
+      <ion-avatar slot="start">
+        <img [src]="livro.foto" alt="Foto do Livro" class="livro-img"/>
+      </ion-avatar>
+
+      <ion-label>
+        <h2>{{ livro.titulo }}</h2>
+        <p>{{ livro.descricao }}</p>
+      </ion-label>
+
+      <ion-buttons slot="end">
+        <!-- Botão de Editar Livro -->
+        <ion-button [routerLink]="['/editar-livro', livro.id]" class="edit-book-button">Editar</ion-button>
+
+        <!-- Botão de Remover Livro -->
+        <ion-button (click)="removerLivro(livro.id)">Remover</ion-button>
+      </ion-buttons>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="full" routerLink="/adicionar-livro">Adicionar Livro</ion-button>
+</ion-content>
